@@ -15,8 +15,8 @@
   margin: 10px 0 0 0;
 }
 
-.wiki_enemy{
-  color: #f22222;
+.wiki_living{
+  color: #0051dd;
 }
 
 .wiki_longline{
@@ -32,28 +32,63 @@
 }
 
 .wiki_card{
+  width: 100%;
+  /* box-shadow: 0 0 10px #1a1c1f25; */
+  border-radius: 20px;
+  margin: 40px 0 0 0;
+}
+
+.wiki_card_contents{
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  min-width: 400px;
-  height: 300px;
-  box-shadow: 0 0 10px #1a1c1f25;
+  align-items: start;
+}
+
+.wiki_checkbox_button{
+  font-size: 16px;
   border-radius: 20px;
-  margin: 40px 0;
+  border: solid #1A1C1F 3px;
+  width: fit-content;
+  padding: 0 20px;
+  font-weight: 900;
+  margin: 0 auto;
+}
+
+#label_button{
+  display: none;
+}
+
+.wiki_detail{
+
 }
 
 .wiki_mob_image{
-
 }
 
 .wiki_mob_info{
-  margin: 20px;
+  /* margin: 20px; */
   width: 20%;
+}
+
+.wiki_mob_info:last-child{
+  width: 40%;
 }
 
 .wiki_mob_name{
   text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.wiki_mob_name::before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  border-radius: 5px;
+  height: 1.4pc;
+  margin: 0 10px 0 0;
+  background-color: #1A1C1F;
 }
 
 .wiki_mob_status{
@@ -70,4 +105,25 @@
 .wiki_mob_status_points{
   font-size: 20px;
   font-weight: 900;
+}
+
+@media screen and (max-width:450px) {
+  .wiki_card_contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wiki_mob_image{
+    margin-bottom: 40px;
+  }
+
+  .wiki_mob_info{
+    width: 100%;
+  }
+
+  .wiki_mob_info:last-child{
+    width: 100%;
+  }
 }

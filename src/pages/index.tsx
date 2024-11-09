@@ -28,34 +28,32 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
-        <div>
-          <Image
-            className={styles.logo}
-            src="/Minecraft.png"
-            alt="Minecraft Server Logo"
-            width={100}
-            height={100}
-            priority
-          />
-        </div>
+          <div className={styles.logo_parent}>
+            <Image
+              className={styles.logo}
+              src="/Minecraft.jpg"
+              alt="Minecraft Server Logo"
+              fill
+              priority
+            />
+          </div>
           <ol>
-            <li>
-              Get started by editing <code>src/pages/index.tsx</code>.
-            </li>
-            <li>Save and see your changes instantly.</li>
+            <li>Start Minecraft with version <code>1.21.1</code>.</li>
+            <li>Get started by joining Server IP <code>122.208.16.184</code>.</li>
           </ol>
 
           <div className={styles.ctas}>
-            <Link href='./wiki/wiki_home' className={styles.secondary}>Wikiを見る</Link>
+            <Link href='./wiki/wiki_home' className={styles.secondary}>Document</Link>
             <a
-              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              href="https://discord.gg/aDDEtbxbSK"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.secondary}
             >
-              Read our docs
+              Join Discord
             </a>
           </div>
+          これは開発中のページです
         </main>
       </div>
     </>

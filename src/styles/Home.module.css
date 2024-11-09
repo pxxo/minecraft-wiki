@@ -56,6 +56,13 @@
   font-weight: 600;
 }
 
+.logo_parent{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
 .ctas {
   display: flex;
   gap: 16px;

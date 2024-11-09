@@ -20,10 +20,10 @@ const Header: React.FC = () => {
         </div>
         <div className={styles.header_links}>
           <Link href="/" className={styles.link}>Home</Link>
-          <Link href="/about" className={styles.link}>Mobs</Link>
-          <Link href="/contact" className={styles.link}>Items</Link>
-          <Link href="/contact" className={styles.link}>Skills</Link>
-          <Link href="/contact" className={styles.link}>Vault</Link>
+          <Link href="/wiki/wiki_home" className={styles.link}>Mobs</Link>
+          <Link href="/development" className={styles.underDevLink}>Items</Link>
+          <Link href="/development" className={styles.underDevLink}>Skills</Link>
+          <Link href="/development" className={styles.underDevLink}>Vault</Link>
         </div>
       </div>
     </header>
