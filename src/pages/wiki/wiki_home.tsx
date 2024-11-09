@@ -1,7 +1,7 @@
 
 import styles from "@/styles/wiki_style/WikiHome.module.css";
-import Header from '@/pages/share/header';
-import Footer from '@/pages/share/footer';
+import Header from '../share/Header';
+import Footer from '../share/Footer';
 import Image from "next/image";
 import { useState,useEffect } from "react";
 // import SideBar from '@/pages/share/sidebar';
